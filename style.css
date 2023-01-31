@@ -1,28 +1,8 @@
 .navbar {
   display: flex;
   justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  border: 1px solid black;
 }
-
-.navbar li {
-  display: inline-block;
-  margin: 0 1rem;
-}
-
-.navbar a {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-  }
-  .navbar li {
-    margin: 1rem 0;
-  }
+.nav-item {
+  margin: 0 10px;
 }
