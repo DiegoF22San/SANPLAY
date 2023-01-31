@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>SanPlayMx</title>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+      }
+      .nav-item {
+        margin: 0 10px;
+      }
+    </style>
   </head>
   <body>
-    <nav>
-      <ul class="navbar">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Aplicaciones</a></li>
-        <li><a href="#">Contactos</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="nav-item">Inicio</div>
+      <div class="nav-item">Aplicaciones</div>
+      <div class="nav-item">Contactos</div>
     </nav>
   </body>
 </html>
