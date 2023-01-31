@@ -2,21 +2,32 @@
 <html>
   <head>
     <style>
-      .navbar {
-        display: flex;
-        justify-content: center;
-        border: 1px solid black;
+      .dropdown {
+        position: relative;
+        display: inline-block;
       }
-      .nav-item {
-        margin: 0 10px;
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
       }
     </style>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav-item">Inicio</div>
-      <div class="nav-item">Aplicaciones</div>
-      <div class="nav-item">Contactos</div>
-    </nav>
+    <div class="dropdown">
+      <a href="#">Menú</a>
+      <div class="dropdown-content">
+        <a href="#">Inicio</a>
+        <a href="#">Aplicaciones</a>
+        <a href="#">Contactos</a>
+      </div>
+    </div>
   </body>
 </html>
